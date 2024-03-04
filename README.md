@@ -1,12 +1,12 @@
  
 
-<h1 align="center">ꪶ𝗖𝗵𝗲𝗲𝗺𝘀 𝗕𝗼𝘁-𝗠𝗗 𝗩11ꫂ<br></h1>
+<h1 align="center">ꪶ𝐃𝐑𝐄𝐗-𝐁𝐎𝐓-𝐌𝐃-𝐕2ꫂ<br></h1>
 <p align="center">
-<img src="https://i.ibb.co/RC7JWDj/e258b5ae2b1cf8195d33743570dbe498.jpg" />
+<img src="https://telegra.ph/file/63e6f85b9264e14222d8a.png" />
 </p>
 
 <p align="center">
-Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/DGXeon" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+Drex Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/DGXeon" target="_blank">Xeon</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
 </p>
 
 <p align="center">
@@ -49,9 +49,9 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 
 ## ```Bot Support Group Chats```
 
-- [`1st GC`](https://chat.whatsapp.com/Dc2qyVeK8JbJq8Gr3U1pKH)
-- [`2nd GC`](https://chat.whatsapp.com/BW0o3ZyiAF5Azb1bIqG9Ue)
-- [`3rd GC`](https://chat.whatsapp.com/KMymhLdGcjPHihOkrfHW7q)
+- [`1st GC`](https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a)
+- [`2nd GC`](https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a)
+- [`3rd GC`](https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a)
 
 ## `For Termux & Panel User, Download This👇`
 - [`Click Here`](https://shrinkme.pro/y07LYARu)
@@ -59,7 +59,7 @@ Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://
 
 # Setup For Deployment 👇
 
-- FORK THE REPOSITORY [Here](https://github.com/DGXeon/CheemsBot-MD11/fork)
+- FORK THE REPOSITORY [Here](https://github.com/drexmose/DREX-BOT-V21/fork)
 
 ## `Generate Pair Code For Session`
 [![Xeon](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Xeon-PairCode)
@@ -72,7 +72,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD11/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/drexmose/DREX-BOT-V2/)
 
 # Install Manually 👇
 ## `Requirements`
