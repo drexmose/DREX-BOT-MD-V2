@@ -1,4 +1,4 @@
-vname: Publish Docker Image to Docker Hub
+name: Publish Docker Image to Docker Hub
  
 on: 
 
