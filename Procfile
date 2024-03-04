@@ -1,1 +1,1 @@
-worker: npm install && npm start
+daily: npm install && npm start
