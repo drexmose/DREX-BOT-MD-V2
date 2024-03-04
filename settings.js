@@ -19,14 +19,14 @@ global.socialm = "GitHub: drexmose" //ur github or insta name
 global.location = "Africa, Kenya, Nairobi" //ur location
 
 //new
-global.botname = '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝐌𝐃 𝐕2𝐏' //ur bot name
+global.botname = '𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝐌𝐃 𝐕2' //ur bot name
 global.ownernumber = '254102074064' //ur owner number
 global.ownername = '𝐃𝐑𝐄𝐗 𝐌𝐎𝐒𝐄' //ur owner name
 global.websitex = "https://youtu.be/mu5m6aB6P5k"
 global.wagc = "https://chat.whatsapp.com/Hf4W852NAroEgMCuQpLX1a"
 global.themeemoji = '😁'
 global.wm = "Drex Bot Inc."
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD11' //script link
+global.botscript = 'its under development bruh😂' //script link
 global.packname = "𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐛𝐲"
 global.author = "𝐘𝐨𝐮𝐫 𝐏𝐚𝐩𝐚 𝐃𝐫𝐞𝐱\n\n+254102074064"
 global.creator = "254102074064@s.whatsapp.net"
