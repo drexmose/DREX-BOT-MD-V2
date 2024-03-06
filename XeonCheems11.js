@@ -2808,7 +2808,7 @@ Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\
           contextInfo: {
           externalAdReply: {
           showAdAttribution: true
-          }}}}}}, {})
+          }}}}}}, {})`
     }
 	
 	break
