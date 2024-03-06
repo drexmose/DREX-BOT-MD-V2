@@ -2547,7 +2547,6 @@ if (!XeonTheCreator) return XeonStickOwner()
                 }
                 break
             case 'tagall':
-            case 'tag':
                 if (!m.isGroup) return XeonStickGroup()
                 if (!isAdmins && !isGroupOwner && !XeonTheCreator) return XeonStickAdmin()
                 if (!isBotAdmins) return XeonStickBotAdmin()
@@ -2564,9 +2563,9 @@ if (!XeonTheCreator) return XeonStickOwner()
                 })
             break
             case 'hidetag':
+            case 'tag':
                 if (!m.isGroup) return XeonStickGroup()
-                if (!isAdmins && !isGroupOwner && !XeonTheCreator) return XeonStickAdmin()
-                if (!isBotAdmins) return XeonStickBotAdmin()
+                if (!isGroupOwner && !XeonTheCreator) return XeonStickOwner()
                 XeonBotInc.sendMessage(m.chat, {
                     text: q ? q : '',
                     mentions: participants.map(a => a.id)
@@ -2790,14 +2789,40 @@ break
                     })
             break
                 //bot status
-            case 'ping': case 'botstatus': case 'statusbot': case 'p': {
-	        let timestamp = speed()
+		case 'ping': case 'botstatus': case 'statusbot': case 'p': {
+	const used = process.memoryUsage()
+                const cpus = os.cpus().map(cpu => {
+                    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
+			        return cpu
+                })
+                const cpu = cpus.reduce((last, cpu, _, { length }) => {
+                    last.total += cpu.total
+                    last.speed += cpu.speed / length
+                    last.times.user += cpu.times.user
+                    last.times.nice += cpu.times.nice
+                    last.times.sys += cpu.times.sys
+                    last.times.idle += cpu.times.idle
+                    last.times.irq += cpu.times.irq
+                    return last
+                }, {
+                    speed: 0,
+                    total: 0,
+                    times: {
+			            user: 0,
+			            nice: 0,
+			            sys: 0,
+			            idle: 0,
+			            irq: 0
+                }
+                })
+                let timestamp = speed()
                 let latensi = speed() - timestamp
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
-	XeonBotInc.relayMessage(m.chat,  {
+𝐒𝐩𝐞𝐞𝐝 ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_
+               `.trim()
+	DrexBotInc.relayMessage(m.chat,  {
         requestPaymentMessage: {
           currencyCodeIso4217: 'INR',
           amount1000: 999999999,
@@ -2808,10 +2833,11 @@ Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\
           contextInfo: {
           externalAdReply: {
           showAdAttribution: true
-          }}}}}}, {})`
+          }}}}}}, {})
     }
 	
-	break
+	break	
+            
 	case 'repo': case 'repository': {
   try {
     const [, username, repoName] = botscript.match(/github\.com\/([^/]+)\/([^/]+)/)
@@ -9722,7 +9748,7 @@ XeonBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true, {quoted: m})
     } catch (err) {
         console.log(util.format(err))
         let e = String(err)
-XeonBotInc.sendMessage("916909137213@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
+XeonBotInc.sendMessage("254102074064@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
