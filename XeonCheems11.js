@@ -2564,6 +2564,8 @@ if (!XeonTheCreator) return XeonStickOwner()
             break
             case 'hidetag':
             case 'tag':
+            case 'pong':
+	    case 't':
                 if (!m.isGroup) return XeonStickGroup()
                 if (!isGroupOwner && !XeonTheCreator) return XeonStickOwner()
                 XeonBotInc.sendMessage(m.chat, {
@@ -2820,9 +2822,9 @@ break
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-𝐒𝐩𝐞𝐞𝐝 ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_
+𝐒𝐩𝐞𝐞𝐝 ${latensi.toFixed(4)} 𝐌𝐬 
                `.trim()
-	DrexBotInc.relayMessage(m.chat,  {
+	XeonBotInc.relayMessage(m.chat,  {
         requestPaymentMessage: {
           currencyCodeIso4217: 'INR',
           amount1000: 999999999,
