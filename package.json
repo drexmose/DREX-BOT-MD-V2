@@ -7,7 +7,7 @@
     "directories": {
         "lib": "lib",
         "src": "src",
-        "media": "XeonMedia"
+        "media": "DrexMedia"
     },
     "scripts": {
         "code": "node main.js",
