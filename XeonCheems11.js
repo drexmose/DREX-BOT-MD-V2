@@ -2503,7 +2503,7 @@ if (!XeonTheCreator) return XeonStickOwner()
                 await XeonBotInc.groupUpdateDescription(m.chat, text)
                 replygcxeon(mess.done)
                 break
-            case 'icon:
+            case 'icon':
             case 'setppgroup':
             case 'setppgrup':
             case 'setppgc':
