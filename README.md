@@ -99,8 +99,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/DGXeon/CheemsBot-MD11
-cd CheemsBot-MD11
+git clone https://github.com/drexmose/DREX-BOT-V2
+cd DREX-BOT-V2
 yarn install
 npm start
 ```
