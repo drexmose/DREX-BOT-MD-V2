@@ -6663,58 +6663,58 @@ case 'blur':
             let latensie = speed() - timestampe
             let a = db.data.users[sender]
             let me = m.sender
-            let xmenu_oh = `┌─❖
-│ Hi 👋 
-└┬❖  ${pushname} 
-┌┤✑  ${xeonytimewisher} 😄${readmore} 
-│└────────────┈ ⳹
-│
-└─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 : ${botname}
-│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
-│𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
-│𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length} User
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${global.db.data.settings[botNumber].totalhit} Hit
-│𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝘁 : ${Object.keys(global.db.data.chats).length} Chat/Gc
-│
-└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : +${me.split('@')[0]}
-│𝗟𝗶𝗺𝗶𝘁 : ${a.limit}
-│𝗧𝗶𝘁𝗹𝗲 : ${a.title ? a.title : '-'}
-│𝗦𝗲𝗿𝗶𝗮𝗹: ${a.serialNumber}
-│
-└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
-│??𝗶𝗺𝗲 : ${xtime}
-│𝗗𝗮𝘁𝗲 : ${xdate}
-└┬───────────────── ⳹
-   │✑  Please Type The *MENU*
-   │✑  Given *BELOW*
-┌└─────────────┈ ⳹
-│❏${xprefix}allmenu
-│❏${xprefix}downloadmenu
-│❏${xprefix}funmenu
-│❏${xprefix}aimenu
-│❏${xprefix}groupmenu
-│❏${xprefix}ownermenu
-│❏${xprefix}photooxymenu
-│❏${xprefix}ephoto360menu
-│❏${xprefix}makermenu
-│❏${xprefix}animemenu
-│❏${xprefix}nsfwmenu
-│❏${xprefix}randomphotomenu
-│❏${xprefix}randomvideomenu
-│❏${xprefix}stickermenu
-│❏${xprefix}databasemenu
-│❏${xprefix}stalkermenu
-│❏${xprefix}bugmenu
-│❏${xprefix}othermenu
-└─────────────────┈ ⳹`
+            let xmenu_oh = `┌─◈
+┋ Holla 👋 
+╰┬◈  ${pushname} 
+╭┥◎  ${xeonytimewisher} 😄${readmore} 
+┋╰┉┉┉┉┉┉┉┉┉┉┉┉┉┈ ⳹
+┋
+╰● 𝑫𝑹𝑬𝑿 𝑩𝑶𝑻 𝑴𝑫 𝑽2 𝑰𝑵𝑭𝑶
+┋𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+┋𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+┋𝗕𝗼𝘁 : ${botname}
+┋𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
+┋𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
+┋𝗠𝗼𝗱𝗲 : ${DrexBotInc.public ? 'Public' : `Self`}
+┋𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : 𝐃𝐫𝐞𝐱 𝐇𝐨𝐬𝐭𝐢𝐧𝐠𝐬
+┋𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+┋𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length} User
+┋𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${global.db.data.settings[botNumber].totalhit} Hit
+┋𝗧𝗼𝘁𝗮𝗹 𝗖𝗵𝗮𝘁 : ${Object.keys(global.db.data.chats).length} Chat/Gc
+┋
+╰┅● 𝑼𝑺𝑬𝑹 𝑰𝑵𝑭𝑶
+┋𝗡𝗮𝗺𝗲 : ${pushname}
+┋𝗡𝘂𝗺𝗯𝗲𝗿 : +${me.split('@')[0]}
+┋𝗟𝗶𝗺𝗶𝘁 : ${a.limit}
+┋𝗧𝗶𝘁𝗹𝗲 : ${a.title ? a.title : '-'}
+┋𝗦𝗲𝗿𝗶𝗮𝗹: ${a.serialNumber}
+┋
+╰┅● 𝑻𝑰𝑴𝑬 𝑰𝑵𝑭𝑶 
+┋𝗧𝗶𝗺𝗲 : ${xtime}
+┋𝗗𝗮𝘁𝗲 : ${xdate}
+╰┬┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅ ⳹
+   ┋◈  Please Type The *MENU*
+   ┋◈  Given *BELOW*
+╭┄┄┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ⳹
+┋◉✫${xprefix}𝐚𝐥𝐥𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐟𝐮𝐧𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐚𝐢𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐠𝐫𝐨𝐮𝐩𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐨𝐰𝐧𝐞𝐫𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐩𝐡𝐨𝐭𝐨𝐨𝐱𝐲𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐞𝐩𝐡𝐨𝐭𝐨360𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐦𝐚𝐤𝐞𝐫𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐚𝐧𝐢𝐦𝐞𝐦𝐞𝐮.
+┋◉✫${xprefix}𝐧𝐬𝐟𝐰𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐫𝐚𝐧𝐝𝐨𝐦𝐩𝐡𝐨𝐭𝐨𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐫𝐚𝐧𝐝𝐨𝐦𝐯𝐢𝐝𝐞𝐨𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐬𝐭𝐢𝐜𝐤𝐞𝐫𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐬𝐭𝐚𝐥𝐤𝐞𝐫𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐛𝐮𝐠𝐦𝐞𝐧𝐮.
+┋◉✫${xprefix}𝐨𝐭𝐡𝐞𝐫𝐦𝐞𝐧𝐮.
+╰┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┈ ⳹`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
