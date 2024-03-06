@@ -603,7 +603,7 @@ var xeonlod = [
 "《 ███████▒▒▒▒▒》50%",
 "《 ██████████▒▒》80%",
 "《 ████████████》100%",
-"𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🦄..."
+"𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝐌𝐃 𝐕2 𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐄😁..."
 ]
 let { key } = await XeonBotInc.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})
 
@@ -1449,7 +1449,7 @@ fs.writeFileSync('./src/data/role/owner.json', JSON.stringify(owner))
 replygcxeon(`The Numbrr ${ya} Has been deleted from owner list by the owner!!!`)
 break
 case 'listowner': {
-                let teks = '┌──⭓「 *List Owner* 」\n│\n'
+                let teks = '┌──⭓「 *𝐃𝐑𝐄𝐗 𝐁𝐎𝐓 𝐌𝐃 𝐕2 𝐎𝐖𝐍𝐄𝐑𝐒* 」\n│\n'
                 for (let x of owner) {
                     teks += `│⭔ ${x}\n`
                 }
@@ -2369,7 +2369,7 @@ await sleep(1000)
 XeonBotInc.sendContact(m.chat, participants.map(a => a.id), xeonbigpp)
 }
 break
-case 'savecontact': case 'svcontact':{
+case 'sace': case 'savecontact': case 'svcontact':{
 if (!m.isGroup) return XeonStickGroup()
 if (!(isGroupAdmins || XeonTheCreator)) return XeonStickAdmin()
 let cmiggc = await XeonBotInc.groupMetadata(m.chat)
@@ -2493,6 +2493,7 @@ if (!XeonTheCreator) return XeonStickOwner()
     replygcxeon(`Success in deleting bot's profile picture`)
     }
     break
+            case 'gdesc':
             case 'setdesc':
             case 'setdesk':
                 if (!m.isGroup) return XeonStickGroup()
@@ -2502,6 +2503,7 @@ if (!XeonTheCreator) return XeonStickOwner()
                 await XeonBotInc.groupUpdateDescription(m.chat, text)
                 replygcxeon(mess.done)
                 break
+            case 'icon:
             case 'setppgroup':
             case 'setppgrup':
             case 'setppgc':
@@ -2574,8 +2576,7 @@ if (!XeonTheCreator) return XeonStickOwner()
             break
             case 'totag':
                 if (!m.isGroup) return XeonStickGroup()
-                if (!isBotAdmins) return XeonStickBotAdmin()
-                if (!isAdmins) return replygcxeon(mess.admin)
+                if (!XeonTheCreator) return XeonStickOwner()
                 if (!m.quoted) return replygcxeon(`Reply media with caption ${prefix + command}`)
                 XeonBotInc.sendMessage(m.chat, {
                     forward: m.quoted.fakeObj,
@@ -2790,49 +2791,12 @@ break
             break
                 //bot status
             case 'ping': case 'botstatus': case 'statusbot': case 'p': {
-	const used = process.memoryUsage()
-                const cpus = os.cpus().map(cpu => {
-                    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
-			        return cpu
-                })
-                const cpu = cpus.reduce((last, cpu, _, { length }) => {
-                    last.total += cpu.total
-                    last.speed += cpu.speed / length
-                    last.times.user += cpu.times.user
-                    last.times.nice += cpu.times.nice
-                    last.times.sys += cpu.times.sys
-                    last.times.idle += cpu.times.idle
-                    last.times.irq += cpu.times.irq
-                    return last
-                }, {
-                    speed: 0,
-                    total: 0,
-                    times: {
-			            user: 0,
-			            nice: 0,
-			            sys: 0,
-			            idle: 0,
-			            irq: 0
-                }
-                })
-                let timestamp = speed()
+	        let timestamp = speed()
                 let latensi = speed() - timestamp
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
 Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
-
-💻 Info Server
-RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-
-_NodeJS Memory Usaage_
-${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
-
-${cpus[0] ? `_Total CPU Usage_
-${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
-_CPU Core(s) Usage (${cpus.length} Core CPU)_
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
-                `.trim()
 	XeonBotInc.relayMessage(m.chat,  {
         requestPaymentMessage: {
           currencyCodeIso4217: 'INR',
