@@ -144,13 +144,13 @@ let vote = db.data.others.vote = []
 let kuismath = db.data.game.math = []
 
 //time
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Nairobi').format('HH:mm:ss')
+const xdate = moment.tz('Africa/Nairobi').format('DD/MM/YYYY')
+const time2 = moment().tz('Africa/Nairobi').format('HH:mm:ss')  
 if(time2 < "23:59:00"){
 var xeonytimewisher = `Good Night 🌌`
  }
- if(time2 < "19:00:00"){
+ if(time2 < "20:00:00"){
 var xeonytimewisher = `Good Evening 🌃`
  }
  if(time2 < "18:00:00"){
@@ -6675,7 +6675,7 @@ case 'blur':
 ┋𝗕𝗼𝘁 : ${botname}
 ┋𝗢𝘄𝗻𝗲𝗿 𝗡𝗼: +${ownernumber}
 ┋𝗣𝗿𝗲𝗳𝗶𝘅 :  [ ${xprefix} ]
-┋𝗠𝗼𝗱𝗲 : ${DrexBotInc.public ? 'Public' : `Self`}
+┋𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
 ┋𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : 𝐃𝐫𝐞𝐱 𝐇𝐨𝐬𝐭𝐢𝐧𝐠𝐬
 ┋𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 ┋𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length} User
