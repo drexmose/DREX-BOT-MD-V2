@@ -6713,7 +6713,7 @@ case 'blur':
 ┋◉✫${xprefix}𝐬𝐭𝐚𝐥𝐤𝐞𝐫𝐦𝐞𝐧𝐮.
 ┋◉✫${xprefix}𝐛𝐮𝐠𝐦𝐞𝐧𝐮.
 ┋◉✫${xprefix}𝐨𝐭𝐡𝐞𝐫𝐦𝐞𝐧𝐮.
-╰┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┈ ⳹`
+╰┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┉┈ ⳹`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
                         image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
@@ -6811,7 +6811,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/Wppj16p/cheemspic.jpg',
+      thumbnailUrl: 'https://telegra.ph/file/a42e758c6b0901b3e7e96.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
@@ -6922,7 +6922,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/Wppj16p/cheemspic.jpg',
+      thumbnailUrl: 'https://telegra.ph/file/a42e758c6b0901b3e7e96.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
