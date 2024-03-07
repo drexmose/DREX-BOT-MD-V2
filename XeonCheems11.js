@@ -2822,7 +2822,7 @@ break
                 neww = performance.now()
                 oldd = performance.now()
                 respon = `
-𝐒𝐩𝐞𝐞𝐝 ${latensi.toFixed(4)} 𝐌𝐬 
+📍𝐁𝐎𝐓 𝐒𝐏𝐄𝐄𝐃 *${latensi.toFixed(4)}* 𝐌𝐒
                `.trim()
 	XeonBotInc.relayMessage(m.chat,  {
         requestPaymentMessage: {
@@ -2901,7 +2901,7 @@ break
                 replygcxeon(`Type ${prefix}owner and chat him`)
                 break
             case 'speedtest': {
-                replygcxeon('Testing Speed...')
+                replygcxeon('𝐓𝐄𝐒𝐓𝐈𝐍𝐆 𝐒𝐏𝐄𝐄𝐃...')
                 let cp = require('child_process')
                 let {
                     promisify
@@ -2953,7 +2953,7 @@ break
             }
             break
             case 'runtime':
-                let pinga = `Bots Have Been Running For ${runtime(process.uptime())}`
+                let pinga = `𝐃𝐑𝐄𝐗-𝐁𝐎𝐓-𝐌𝐃-𝐕2 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐅𝐎𝐑 *${runtime(process.uptime())}*`
                 XeonBotInc.sendMessage(m.chat, {
                     text: pinga,
                     contextInfo: {
@@ -3021,7 +3021,7 @@ replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVide
 }
 }
 break
-            case 'swm': case 'steal': case 'stickerwm': case 'take':{
+		case 'wm': case 'swm': case 'steal': case 'stickerwm': case 'take':{
 if (!isPremium) return replyprem(mess.premium)
 if (!args.join(" ")) return replygcxeon(`Where is the text?`)
 const swn = args.join(" ")
@@ -3043,6 +3043,7 @@ replygcxeon(`Photo/Video?`)
 }
 break
             case 'toimage':
+	    case 'photo':
             case 'toimg': {
                 if (!/webp/.test(mime)) return replygcxeon(`Reply sticker with caption *${prefix + command}*`)
                 await XeonStickWait()
@@ -3147,6 +3148,8 @@ break
 
             }
             break
+		case 'url':
+		case 'upload':
             case 'tourl': {
                 await XeonStickWait()
                 let media = await XeonBotInc.downloadAndSaveMediaMessage(qmsg)
@@ -3161,6 +3164,8 @@ break
 
             }
             break
+		case 'mix':
+		case 'emomix':
             case 'emojimix': {
                 let [emoji1, emoji2] = text.split`+`
                 if (!emoji1) return replygcxeon(`Example : ${prefix + command} 😅+🤔`)
@@ -3176,6 +3181,8 @@ break
                 }
             }
             break
+		case 'mix2':
+		case 'emomix2':
             case 'emojimix2': {
                 if (!text) return replygcxeon(`Example : ${prefix + command} 😅`)
                 let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(text)}`)
@@ -4197,30 +4204,30 @@ case 'yts': case 'ytsearch': {
                 XeonBotInc.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
             break
-            case 'play':  case 'song': {
-if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
-const xeonplaymp3 = require('./lib/ytdl')
-let yts = require("youtube-yts")
-        let search = await yts(text)
-        let anup3k = search.videos[0]
-const pl= await xeonplaymp3.mp3(anup3k.url)
-await XeonBotInc.sendMessage(m.chat,{
-    audio: fs.readFileSync(pl.path),
-    fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
-    contextInfo:{
-        externalAdReply:{
-            title:anup3k.title,
-            body: botname,
-            thumbnail: await fetchBuffer(pl.meta.image),
-            sourceUrl: websitex,
-            mediaType:2,
-            mediaUrl:anup3k.url,
-        }
-
-    },
-},{quoted:m})
-await fs.unlinkSync(pl.path)
+           case 'play': case 'song': {
+    if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
+    const xeonplaymp3 = require('./lib/ytdl')
+    let yts = require("youtube-yts")
+    let search = await yts(text)
+    let anup3k = search.videos[0]
+    const pl = await xeonplaymp3.mp3(anup3k.url)
+    await XeonBotInc.sendMessage(m.chat, {
+        audio: Buffer.from(pl, 'utf8'),
+        fileName: anup3k.title + '.mp3',
+        mimetype: 'audio/mpeg', 
+        ptt: true,
+        contextInfo: {
+            externalAdReply: {
+                titled: anup3k.title,
+                body: botname,
+                thumbnail: await fetchBuffer(pl.meta.image),
+                sourceUrl: websitex,
+                mediaType: 2,
+                mediaUrl: anup3k.url
+            }
+        },
+    }, {quoted: m})
+    await fs.unlinkSync(pl)
 }
 break
 case 'ytmp3': case 'ytaudio':
@@ -4268,7 +4275,7 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
     XeonBotInc.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => replygcxeon(mess.error))
 break
-case 'tiktok':{
+case 'tt': case 'tiktok':{
 if (!q) return replygcxeon( `Example : ${prefix + command} link`)
 if (!q.includes('tiktok')) return replygcxeon(`Link Invalid!!`)
 require('./lib/tiktok').Tiktok(q).then( data => {
@@ -4276,7 +4283,7 @@ XeonBotInc.sendMessage(m.chat, { caption: `Here you go!`, video: { url: data.wat
 })
 }
 break
-case 'tiktokaudio':{
+case 'ttaudio': case 'tiktokaudio':{
 if (!q) return replygcxeon( `Example : ${prefix + command} link`)
 if (!q.includes('tiktok')) return replygcxeon(`Link Invalid!!`)
 require('./lib/tiktok').Tiktok(q).then( data => {
@@ -4835,7 +4842,7 @@ var notnot = JSON.parse(fs.readFileSync('./src/media/randompics/wallhp.json'))
 var hasil = pickRandom(notnot)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url } }, { quoted: m })
 break
-            case 'remini': {
+		case 'hd': case 'hdr': case 'remini': {
 			if (!quoted) return replygcxeon(`Where is the picture?`)
 			if (!/image/.test(mime)) return replygcxeon(`Send/Reply Photos With Captions ${prefix + command}`)
 			await XeonStickWait()
@@ -4921,7 +4928,7 @@ case 'rate': {
             }
             break
             case 'runtime': {
-            	let lowq = `*The Bot Has Been Online For:*\n*${runtime(process.uptime())}*`
+            	let lowq = `*𝐃𝐑𝐄𝐗-𝐁𝐎𝐓-𝐌𝐃-𝐕2 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐎𝐍𝐋𝐈𝐍𝐄 𝐅𝐎𝐑:*\n*${runtime(process.uptime())}*`
                 replygcxeon(lowq)
             	}
             break
@@ -4968,7 +4975,7 @@ isForwarded: true,
             let jodoh = member[Math.floor(Math.random() * member.length)]
 XeonBotInc.sendMessage(m.chat,
 { text: `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-Cieeee, What's Going On❤️💖👀`,
+Mai Lawdd, What's Going On❤️💖👀`,
 contextInfo:{
 mentionedJid:[orang, jodoh],
 forwardingScore: 9999999,
@@ -5213,7 +5220,7 @@ case 'dare':
     "spill people who make you pause",
     "call crush/pickle now and send ss",
     "drop only emote every time you type on gc/pc for 1 day.",
-    "say Welcome to Who Wants To Be a Millionaire! to all the groups you have",
+    "Say I Love Drex By Releasing A Vn Of Not Less Than 20 Seconds",
     "call ex saying miss",
     "sing the chorus of the last song you played",
     "vn your ex/crush/girlfriend, says hi (name), wants to call, just a moment. I miss you so much",
@@ -6313,7 +6320,7 @@ ${translatedChapterHindi.text}`
   }
   }
   break
-  case 'translate':{
+	case 'trt': case 'translate':{
   	if (!q) return replygcxeon(`*Where is the text*\n\n*𝙴xample usage*\n*${prefix + command} <language id> <text>*\n*${prefix + command} ja yo wassup*`)
   	const defaultLang = 'en'
 const tld = 'cn'
