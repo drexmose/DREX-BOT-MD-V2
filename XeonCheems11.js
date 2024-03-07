@@ -4205,29 +4205,29 @@ case 'yts': case 'ytsearch': {
             }
             break
            case 'play': case 'song': {
-    if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
-    const xeonplaymp3 = require('./lib/ytdl')
-    let yts = require("youtube-yts")
-    let search = await yts(text)
-    let anup3k = search.videos[0]
-    const pl = await xeonplaymp3.mp3(anup3k.url)
-    await XeonBotInc.sendMessage(m.chat, {
-        audio: Buffer.from(pl, 'utf8'),
-        fileName: anup3k.title + '.mp3',
-        mimetype: 'audio/mpeg', 
-        ptt: true,
-        contextInfo: {
-            externalAdReply: {
-                titled: anup3k.title,
-                body: botname,
-                thumbnail: await fetchBuffer(pl.meta.image),
-                sourceUrl: websitex,
-                mediaType: 2,
-                mediaUrl: anup3k.url
-            }
-        },
-    }, {quoted: m})
-    await fs.unlinkSync(pl)
+if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
+const xeonplaymp3 = require('./lib/ytdl')
+let yts = require("youtube-yts")
+ let search = await yts(text)
+ let anup3k = search.videos[0]
+const pl= await xeonplaymp3.mp3(anup3k.url)
+await XeonBotInc.sendMessage(m.chat,{
+ audio: fs.readFileSync(pl.path),
+ fileName: anup3k.title + '.mp3',
+ mimetype: 'audio/mp3', ptt: true,
+ contextInfo:{
+ externalAdReply:{
+ titled:anup3k.title,
+ body: botname,
+ thumbnail: await fetchBuffer(pl.meta.image),
+ sourceUrl: websitex,
+ mediaType:2,
+ mediaUrl:anup3k.url,
+ }
+
+ },
+},{quoted:m})
+await fs.unlinkSync(pl.path)
 }
 break
 case 'ytmp3': case 'ytaudio':
