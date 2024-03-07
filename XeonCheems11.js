@@ -4204,28 +4204,28 @@ case 'yts': case 'ytsearch': {
                 XeonBotInc.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
             break
-           case 'play': case 'song': {
+           case 'play':  case 'song': {
 if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
 const xeonplaymp3 = require('./lib/ytdl')
 let yts = require("youtube-yts")
- let search = await yts(text)
- let anup3k = search.videos[0]
+        let search = await yts(text)
+        let anup3k = search.videos[0]
 const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
- audio: fs.readFileSync(pl.path),
- fileName: anup3k.title + '.mp3',
- mimetype: 'audio/mp3', ptt: true,
- contextInfo:{
- externalAdReply:{
- titled:anup3k.title,
- body: botname,
- thumbnail: await fetchBuffer(pl.meta.image),
- sourceUrl: websitex,
- mediaType:2,
- mediaUrl:anup3k.url,
- }
+    audio: fs.readFileSync(pl.path),
+    fileName: anup3k.title + '.mp3',
+    mimetype: 'audio/mp4', ptt: true,
+    contextInfo:{
+        externalAdReply:{
+            titled:anup3k.title,
+            body: botname,
+            thumbnail: await fetchBuffer(pl.meta.image),
+            sourceUrl: websitex,
+            mediaType:2,
+            mediaUrl:anup3k.url,
+        }
 
- },
+    },
 },{quoted:m})
 await fs.unlinkSync(pl.path)
 }
