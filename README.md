@@ -18,13 +18,13 @@ Drex Bot Multi Device is a automated whatsapp bot created by <a href="https://gi
 # ```Bot Info```
 <p align="center">
 <a href="https://github.com/drexmose/followers"><img title="Followers" src="https://img.shields.io/github/followers/drexmose?color=red&style=flat-square"></a>
-<a href="https://github.com/drexmose/DREX-BOT-V2/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/drexmose/DREX-BOT-V2 11?color=blue&style=flat-square"></a>
-<a href="https://github.com/drexmose/DRRX-BOT-V2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/drexmose/DREX-BOT-V2?color=red&style=flat-square"></a>
-<a href="https://github.com/DGXeon/CheemsBot-MD11/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/drexmose/DREX-BOT-V211?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/drexmose/DREX-BOT-V2"><img title="Open Source" src="https://img.shields.io/badge/Author-Drex%20Bot%20Inc.-red?v=103"></a>
-<a href="https://github.com/drexmose/DREX-BOT-V2"><img title="Size" src="https://img.shields.io/github/repo-size/drexmose/DREX-BOT-V2?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdrexmose%2FDRE-BOT-V2&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/drexmose/DREX-BOT-V2/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/drexmose/DREX-BOT-MD-V2/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/drexmose/DREX-BOT-MD-V2 11?color=blue&style=flat-square"></a>
+<a href="https://github.com/drexmose/DRRX-BOT-MD-V2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/drexmose/DREX-BOT-V2?color=red&style=flat-square"></a>
+<a href="https://github.com/drexmose/DREX-BOT-MD-V2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/drexmose/DREX-BOT-V211?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/drexmose/DREX-BOT-MD-V2"><img title="Open Source" src="https://img.shields.io/badge/Author-Drex%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/drexmose/DREX-BOT-MD-V2"><img title="Size" src="https://img.shields.io/github/repo-size/drexmose/DREX-BOT-MD-V2?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdrexmose%2FDRE-BOT-MD-V2&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/drexmose/DREX-BOT-MD-V2/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
     </p>
@@ -59,10 +59,10 @@ Drex Bot Multi Device is a automated whatsapp bot created by <a href="https://gi
 
 # Setup For Deployment 👇
 
-- FORK THE REPOSITORY [Here](https://github.com/drexmose/DREX-BOT-V21/fork)
+- FORK THE REPOSITORY [Here](https://github.com/drexmose/DREX-BOT-MD-V2/fork)
 
 ## `Generate Pair Code For Session`
-[![Xeon](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@DGXeon/Xeon-PairCode)
+[![Xeon](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@darkintent120/DREX-BOT-PAIRCODE)
 
 ## ` BUILDPACKS`
 
@@ -71,7 +71,7 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/drexmose/DREX-BOT-V2/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/drexmose/DREX-BOT-MD-V2/)
 
 # Install Manually 👇
 ## `Requirements`
@@ -83,7 +83,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ## `Clone Repo & Installation dependencies`
 ```bash
 git clone https://github.com/drexmose/DREX-BOT-V2.git
-cd DREX-BOT-V2
+cd DREX-BOT-MD-V2
 
 npm start
 ```
@@ -99,8 +99,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/drexmose/DREX-BOT-V2
-cd DREX-BOT-V2
+git clone https://github.com/drexmose/DREX-BOT-MD-V2
+cd DREX-BOT-MD-V2
 yarn install
 npm start
 ```
@@ -112,8 +112,8 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagrmagick
 apt install bash
-git clone https://github.com/drexmose/DREX-BOT-V2
-cd DREX-BOT-V2
+git clone https://github.com/drexmose/DREX-BOT-MD-V2
+cd DREX-BOT-MD-V2
 npm start
 ```
 ## `For 24/7 Activation (Termux)`
